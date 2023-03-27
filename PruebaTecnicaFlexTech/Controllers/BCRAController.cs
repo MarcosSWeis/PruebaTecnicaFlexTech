@@ -20,12 +20,13 @@ namespace PruebaTecnicaFlexTech.Controllers
 
         //Agrego esta forma proque me parecio una forma mas orderna de plantear el ejercicio, haciendo mencion a lo que hablaos de clases
         //si bien en le otro metodo uso una clase anonima que me devuelve los mismo un string fecha y el string del input en mayuscula
-        //en este metodo contamos con el tipo de dato que devuelve eso parametros (InformationJson) y podemos controlar lo que devolvemos        
-        [HttpGet("{information}")]
-        public InformationJson GetJsonRefactor(string information)
-        {
-            InformationJson info = new(DateTime.Now,information);
-            return info;
-        }
+        //en este metodo contamos con el tipo de dato que devuelve eso parametros (InformationJson) y podemos controlar lo que devolvemos
+
+        //[HttpGet("{information}")]
+        //public InformationJson GetJsonRefactor(string information)
+        //{
+        //    InformationJson info = new(DateTime.Now,information.ToUpper());
+        //    return info;
+        //}
     }
 }
